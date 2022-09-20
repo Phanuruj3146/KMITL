@@ -173,3 +173,12 @@ if __name__ == '__main__':
         t.ht()
         print("The Winner is!! " + winner)
     t.exitonclick()
+
+
+# 1
+# 2
+# 5
+# 10
+# 23
+# Love
+# if the racers have only the abnormal turtle and the energy of each turtle is running out
