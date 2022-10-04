@@ -22,4 +22,3 @@ def fib_ite(n):
 
 
 print(fib_re(int(input())))
-print(fib_ite(int(input())))

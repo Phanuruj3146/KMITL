@@ -30,5 +30,5 @@ def tur_stars1(n):
 
 
 stars1(5)
-tur_stars1(5)
+tur_stars1(7)
 t.exitonclick()
