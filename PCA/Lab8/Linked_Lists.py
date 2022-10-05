@@ -92,6 +92,14 @@ class UnorderedList:
                 print("mylist", self.getList())
                 break
 
+    def dble(self):
+        current = self.head
+        while current != None:
+            dtemp = Node(current.getData())
+            dtemp.setNext(current.getNext())
+            current.setNext(dtemp)
+            current = dtemp.getNext()
+
 
     def getList(self):
         current = self.head
@@ -105,10 +113,14 @@ class UnorderedList:
 
 def main():
     list1 = [0, 0, 0, 0, 1, 1, 0, 0, 0, 3, 3, 3, 1, 1, 0]
+    list2 = [3, 7, 4, 2, 2]
     mylist = UnorderedList()
-    for i in list1:
+    # for i in list1:
+    #     mylist.add(i)
+    # mylist.squish()
+    for i in list2:
         mylist.add(i)
-    mylist.squish()
+    mylist.dble()
     print(mylist.getList())
 
 
