@@ -13,5 +13,6 @@ main:
     addu    $t2, $t0, $t1
     sw		$t2, r	
     lw      $t3, q
-    
-    
+    # li  $v0, 4
+    # la  $a0, str
+    # syscall

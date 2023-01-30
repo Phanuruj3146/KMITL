@@ -5,7 +5,7 @@ main:
     li  $v0, 5
     syscall
 
-    move $t0, $v0
+    move $t0, $v0s
     li  $t1, 0
     li  $t2, 0
 
