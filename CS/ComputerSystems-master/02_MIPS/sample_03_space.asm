@@ -8,7 +8,8 @@ q:  .word   0x9
     .globl  main
 
 main:
-    lw		$t0, n	
+    li      $t5, 0x7
+    lw		$t0, n
     lw      $t1, m
     addu    $t2, $t0, $t1
     sw		$t2, r	
