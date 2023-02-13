@@ -1,0 +1,92 @@
+|OneBitAlu
+Result <= MUX:inst11.result
+A => inst.IN0
+A => inst1.IN1
+A => OneBitAdder:inst8.A
+B => inst10.IN0
+B => MUX:inst9.data[0]
+Binvert => MUX:inst9.sel[0]
+Cout <= OneBitAdder:inst8.Cout
+Op[0] => MUX:inst11.sel[0]
+Op[1] => MUX:inst11.sel[1]
+Cin => ~NO_FANOUT~
+
+
+|OneBitAlu|MUX:inst11
+data[0] => lpm_mux:$00001.data[0][0]
+data[1] => lpm_mux:$00001.data[1][0]
+data[2] => lpm_mux:$00001.data[2][0]
+sel[0] => lpm_mux:$00001.sel[0]
+sel[1] => lpm_mux:$00001.sel[1]
+result <= lpm_mux:$00001.result[0]
+
+
+|OneBitAlu|MUX:inst11|lpm_mux:$00001
+data[0][0] => mux_pnc:auto_generated.data[0]
+data[1][0] => mux_pnc:auto_generated.data[1]
+data[2][0] => mux_pnc:auto_generated.data[2]
+sel[0] => mux_pnc:auto_generated.sel[0]
+sel[1] => mux_pnc:auto_generated.sel[1]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_pnc:auto_generated.result[0]
+
+
+|OneBitAlu|MUX:inst11|lpm_mux:$00001|mux_pnc:auto_generated
+data[0] => data0_wire[0].IN0
+data[1] => data1_wire[0].IN0
+data[2] => data2_wire[0].IN0
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => data0_wire[0]~0.IN0
+sel[0] => data1_wire[0].IN1
+sel[1] => data2_wire[0].IN1
+sel[1] => _~1.IN0
+
+
+|OneBitAlu|MUX:inst9
+data[0] => lpm_mux:$00001.data[0][0]
+data[1] => lpm_mux:$00001.data[1][0]
+sel[0] => lpm_mux:$00001.sel[0]
+result <= lpm_mux:$00001.result[0]
+
+
+|OneBitAlu|MUX:inst9|lpm_mux:$00001
+data[0][0] => mux_nnc:auto_generated.data[0]
+data[1][0] => mux_nnc:auto_generated.data[1]
+sel[0] => mux_nnc:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_nnc:auto_generated.result[0]
+
+
+|OneBitAlu|MUX:inst9|lpm_mux:$00001|mux_nnc:auto_generated
+data[0] => l1_w0_n0_mux_dataout~1.IN1
+data[1] => l1_w0_n0_mux_dataout~0.IN1
+result[0] <= l1_w0_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => l1_w0_n0_mux_dataout~0.IN0
+sel[0] => _~0.IN0
+
+
+|OneBitAlu|OneBitAdder:inst8
+Cout <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A => inst1.IN0
+A => inst.IN0
+A => XOR3:inst9.IN1
+Cin => inst1.IN1
+Cin => inst2.IN1
+Cin => XOR3:inst9.IN3
+B => inst2.IN0
+B => inst.IN1
+B => XOR3:inst9.IN2
+R <= XOR3:inst9.OUT
+
+
+|OneBitAlu|OneBitAdder:inst8|XOR3:inst9
+OUT <= 1.DB_MAX_OUTPUT_PORT_TYPE
+IN1 => 1.IN0
+IN2 => 3.IN0
+IN3 => 3.IN1
+
+
