@@ -876,3 +876,4 @@ applicable agreement for further details.
 	(pt 832 168)
 	(pt 800 168)
 )
+(text "S" (rect 936 -136 944 -122)(font "Arial" (font_size 8)))
