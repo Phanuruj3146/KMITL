@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="OneBitALU">
+		<CBX_INST_ENTRY INSTANCE_NAME="|OneBitALU|MUX:inst8|lpm_mux:$00001" CBX_FILE_NAME="mux_nnc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OneBitALU|MUX:inst9|lpm_mux:$00001" CBX_FILE_NAME="mux_pnc.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

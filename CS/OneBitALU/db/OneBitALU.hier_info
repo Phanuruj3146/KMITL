@@ -1,0 +1,92 @@
+|OneBitALU
+Cout <= OneBitAdder:inst12.Cout
+A => OneBitAdder:inst12.A
+A => inst10.IN0
+A => inst11.IN1
+B => inst.IN0
+B => MUX:inst8.data[0]
+Binvert => MUX:inst8.sel[0]
+Cin => OneBitAdder:inst12.Cin
+R <= MUX:inst9.result
+OP[0] => MUX:inst9.sel[0]
+OP[1] => MUX:inst9.sel[1]
+
+
+|OneBitALU|OneBitAdder:inst12
+Cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A => inst8.IN0
+A => inst.IN0
+A => XOR3:inst7.IN1
+Cin => inst8.IN1
+Cin => inst9.IN1
+Cin => XOR3:inst7.IN3
+B => inst9.IN0
+B => inst.IN1
+B => XOR3:inst7.IN2
+R <= XOR3:inst7.OUT
+
+
+|OneBitALU|OneBitAdder:inst12|XOR3:inst7
+OUT <= 1.DB_MAX_OUTPUT_PORT_TYPE
+IN1 => 1.IN0
+IN2 => 3.IN0
+IN3 => 3.IN1
+
+
+|OneBitALU|MUX:inst8
+data[0] => lpm_mux:$00001.data[0][0]
+data[1] => lpm_mux:$00001.data[1][0]
+sel[0] => lpm_mux:$00001.sel[0]
+result <= lpm_mux:$00001.result[0]
+
+
+|OneBitALU|MUX:inst8|lpm_mux:$00001
+data[0][0] => mux_nnc:auto_generated.data[0]
+data[1][0] => mux_nnc:auto_generated.data[1]
+sel[0] => mux_nnc:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_nnc:auto_generated.result[0]
+
+
+|OneBitALU|MUX:inst8|lpm_mux:$00001|mux_nnc:auto_generated
+data[0] => l1_w0_n0_mux_dataout.IN1
+data[1] => l1_w0_n0_mux_dataout.IN1
+result[0] <= l1_w0_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => l1_w0_n0_mux_dataout.IN0
+sel[0] => _.IN0
+
+
+|OneBitALU|MUX:inst9
+data[0] => lpm_mux:$00001.data[0][0]
+data[1] => lpm_mux:$00001.data[1][0]
+data[2] => lpm_mux:$00001.data[2][0]
+sel[0] => lpm_mux:$00001.sel[0]
+sel[1] => lpm_mux:$00001.sel[1]
+result <= lpm_mux:$00001.result[0]
+
+
+|OneBitALU|MUX:inst9|lpm_mux:$00001
+data[0][0] => mux_pnc:auto_generated.data[0]
+data[1][0] => mux_pnc:auto_generated.data[1]
+data[2][0] => mux_pnc:auto_generated.data[2]
+sel[0] => mux_pnc:auto_generated.sel[0]
+sel[1] => mux_pnc:auto_generated.sel[1]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_pnc:auto_generated.result[0]
+
+
+|OneBitALU|MUX:inst9|lpm_mux:$00001|mux_pnc:auto_generated
+data[0] => data0_wire[0].IN0
+data[1] => data1_wire[0].IN0
+data[2] => data2_wire[0].IN0
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => data0_wire[0].IN0
+sel[0] => data1_wire[0].IN1
+sel[1] => data2_wire[0].IN1
+sel[1] => _.IN0
+
+

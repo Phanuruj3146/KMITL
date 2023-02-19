@@ -38,10 +38,10 @@ data[0] => data0_wire[0].IN0
 data[1] => data1_wire[0].IN0
 data[2] => data2_wire[0].IN0
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => data0_wire[0]~0.IN0
+sel[0] => data0_wire[0].IN0
 sel[0] => data1_wire[0].IN1
 sel[1] => data2_wire[0].IN1
-sel[1] => _~1.IN0
+sel[1] => _.IN0
 
 
 |OneBitAlu|MUX:inst9
@@ -62,11 +62,11 @@ result[0] <= mux_nnc:auto_generated.result[0]
 
 
 |OneBitAlu|MUX:inst9|lpm_mux:$00001|mux_nnc:auto_generated
-data[0] => l1_w0_n0_mux_dataout~1.IN1
-data[1] => l1_w0_n0_mux_dataout~0.IN1
+data[0] => l1_w0_n0_mux_dataout.IN1
+data[1] => l1_w0_n0_mux_dataout.IN1
 result[0] <= l1_w0_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => l1_w0_n0_mux_dataout~0.IN0
-sel[0] => _~0.IN0
+sel[0] => l1_w0_n0_mux_dataout.IN0
+sel[0] => _.IN0
 
 
 |OneBitAlu|OneBitAdder:inst8
