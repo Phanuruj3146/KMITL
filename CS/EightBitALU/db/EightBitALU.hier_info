@@ -104,11 +104,11 @@ result[0] <= mux_lmc:auto_generated.result[0]
 
 
 |EightBitALU|OneBitALU:inst9|MUX:inst8|lpm_mux:$00001|mux_lmc:auto_generated
-data[0] => result_node[0].IN1
-data[1] => result_node[0].IN1
+data[0] => result_node[0]~1.IN1
+data[1] => result_node[0]~0.IN1
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => result_node[0].IN0
-sel[0] => _.IN0
+sel[0] => result_node[0]~0.IN0
+sel[0] => _~0.IN0
 
 
 |EightBitALU|OneBitALU:inst9|MUX:inst9
@@ -137,10 +137,10 @@ data[0] => data0_wire[0].IN0
 data[1] => data1_wire[0].IN0
 data[2] => data2_wire[0].IN0
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => data0_wire[0].IN0
+sel[0] => data0_wire[0]~0.IN0
 sel[0] => data1_wire[0].IN1
 sel[1] => data2_wire[0].IN1
-sel[1] => _.IN0
+sel[1] => _~1.IN0
 
 
 |EightBitALU|OneBitALU:inst8
@@ -196,11 +196,11 @@ result[0] <= mux_lmc:auto_generated.result[0]
 
 
 |EightBitALU|OneBitALU:inst8|MUX:inst8|lpm_mux:$00001|mux_lmc:auto_generated
-data[0] => result_node[0].IN1
-data[1] => result_node[0].IN1
+data[0] => result_node[0]~1.IN1
+data[1] => result_node[0]~0.IN1
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => result_node[0].IN0
-sel[0] => _.IN0
+sel[0] => result_node[0]~0.IN0
+sel[0] => _~0.IN0
 
 
 |EightBitALU|OneBitALU:inst8|MUX:inst9
@@ -229,10 +229,10 @@ data[0] => data0_wire[0].IN0
 data[1] => data1_wire[0].IN0
 data[2] => data2_wire[0].IN0
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => data0_wire[0].IN0
+sel[0] => data0_wire[0]~0.IN0
 sel[0] => data1_wire[0].IN1
 sel[1] => data2_wire[0].IN1
-sel[1] => _.IN0
+sel[1] => _~1.IN0
 
 
 |EightBitALU|OneBitALU:inst7
@@ -288,11 +288,11 @@ result[0] <= mux_lmc:auto_generated.result[0]
 
 
 |EightBitALU|OneBitALU:inst7|MUX:inst8|lpm_mux:$00001|mux_lmc:auto_generated
-data[0] => result_node[0].IN1
-data[1] => result_node[0].IN1
+data[0] => result_node[0]~1.IN1
+data[1] => result_node[0]~0.IN1
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => result_node[0].IN0
-sel[0] => _.IN0
+sel[0] => result_node[0]~0.IN0
+sel[0] => _~0.IN0
 
 
 |EightBitALU|OneBitALU:inst7|MUX:inst9
@@ -321,10 +321,10 @@ data[0] => data0_wire[0].IN0
 data[1] => data1_wire[0].IN0
 data[2] => data2_wire[0].IN0
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => data0_wire[0].IN0
+sel[0] => data0_wire[0]~0.IN0
 sel[0] => data1_wire[0].IN1
 sel[1] => data2_wire[0].IN1
-sel[1] => _.IN0
+sel[1] => _~1.IN0
 
 
 |EightBitALU|OneBitALU:inst6
@@ -380,11 +380,11 @@ result[0] <= mux_lmc:auto_generated.result[0]
 
 
 |EightBitALU|OneBitALU:inst6|MUX:inst8|lpm_mux:$00001|mux_lmc:auto_generated
-data[0] => result_node[0].IN1
-data[1] => result_node[0].IN1
+data[0] => result_node[0]~1.IN1
+data[1] => result_node[0]~0.IN1
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => result_node[0].IN0
-sel[0] => _.IN0
+sel[0] => result_node[0]~0.IN0
+sel[0] => _~0.IN0
 
 
 |EightBitALU|OneBitALU:inst6|MUX:inst9
@@ -413,10 +413,10 @@ data[0] => data0_wire[0].IN0
 data[1] => data1_wire[0].IN0
 data[2] => data2_wire[0].IN0
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => data0_wire[0].IN0
+sel[0] => data0_wire[0]~0.IN0
 sel[0] => data1_wire[0].IN1
 sel[1] => data2_wire[0].IN1
-sel[1] => _.IN0
+sel[1] => _~1.IN0
 
 
 |EightBitALU|OneBitALU:inst5
@@ -472,11 +472,11 @@ result[0] <= mux_lmc:auto_generated.result[0]
 
 
 |EightBitALU|OneBitALU:inst5|MUX:inst8|lpm_mux:$00001|mux_lmc:auto_generated
-data[0] => result_node[0].IN1
-data[1] => result_node[0].IN1
+data[0] => result_node[0]~1.IN1
+data[1] => result_node[0]~0.IN1
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => result_node[0].IN0
-sel[0] => _.IN0
+sel[0] => result_node[0]~0.IN0
+sel[0] => _~0.IN0
 
 
 |EightBitALU|OneBitALU:inst5|MUX:inst9
@@ -505,10 +505,10 @@ data[0] => data0_wire[0].IN0
 data[1] => data1_wire[0].IN0
 data[2] => data2_wire[0].IN0
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => data0_wire[0].IN0
+sel[0] => data0_wire[0]~0.IN0
 sel[0] => data1_wire[0].IN1
 sel[1] => data2_wire[0].IN1
-sel[1] => _.IN0
+sel[1] => _~1.IN0
 
 
 |EightBitALU|OneBitALU:inst4
@@ -564,11 +564,11 @@ result[0] <= mux_lmc:auto_generated.result[0]
 
 
 |EightBitALU|OneBitALU:inst4|MUX:inst8|lpm_mux:$00001|mux_lmc:auto_generated
-data[0] => result_node[0].IN1
-data[1] => result_node[0].IN1
+data[0] => result_node[0]~1.IN1
+data[1] => result_node[0]~0.IN1
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => result_node[0].IN0
-sel[0] => _.IN0
+sel[0] => result_node[0]~0.IN0
+sel[0] => _~0.IN0
 
 
 |EightBitALU|OneBitALU:inst4|MUX:inst9
@@ -597,10 +597,10 @@ data[0] => data0_wire[0].IN0
 data[1] => data1_wire[0].IN0
 data[2] => data2_wire[0].IN0
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => data0_wire[0].IN0
+sel[0] => data0_wire[0]~0.IN0
 sel[0] => data1_wire[0].IN1
 sel[1] => data2_wire[0].IN1
-sel[1] => _.IN0
+sel[1] => _~1.IN0
 
 
 |EightBitALU|OneBitALU:inst3
@@ -656,11 +656,11 @@ result[0] <= mux_lmc:auto_generated.result[0]
 
 
 |EightBitALU|OneBitALU:inst3|MUX:inst8|lpm_mux:$00001|mux_lmc:auto_generated
-data[0] => result_node[0].IN1
-data[1] => result_node[0].IN1
+data[0] => result_node[0]~1.IN1
+data[1] => result_node[0]~0.IN1
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => result_node[0].IN0
-sel[0] => _.IN0
+sel[0] => result_node[0]~0.IN0
+sel[0] => _~0.IN0
 
 
 |EightBitALU|OneBitALU:inst3|MUX:inst9
@@ -689,10 +689,10 @@ data[0] => data0_wire[0].IN0
 data[1] => data1_wire[0].IN0
 data[2] => data2_wire[0].IN0
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => data0_wire[0].IN0
+sel[0] => data0_wire[0]~0.IN0
 sel[0] => data1_wire[0].IN1
 sel[1] => data2_wire[0].IN1
-sel[1] => _.IN0
+sel[1] => _~1.IN0
 
 
 |EightBitALU|OneBitALU:inst
@@ -748,11 +748,11 @@ result[0] <= mux_lmc:auto_generated.result[0]
 
 
 |EightBitALU|OneBitALU:inst|MUX:inst8|lpm_mux:$00001|mux_lmc:auto_generated
-data[0] => result_node[0].IN1
-data[1] => result_node[0].IN1
+data[0] => result_node[0]~1.IN1
+data[1] => result_node[0]~0.IN1
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => result_node[0].IN0
-sel[0] => _.IN0
+sel[0] => result_node[0]~0.IN0
+sel[0] => _~0.IN0
 
 
 |EightBitALU|OneBitALU:inst|MUX:inst9
@@ -781,9 +781,9 @@ data[0] => data0_wire[0].IN0
 data[1] => data1_wire[0].IN0
 data[2] => data2_wire[0].IN0
 result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => data0_wire[0].IN0
+sel[0] => data0_wire[0]~0.IN0
 sel[0] => data1_wire[0].IN1
 sel[1] => data2_wire[0].IN1
-sel[1] => _.IN0
+sel[1] => _~1.IN0
 
 
