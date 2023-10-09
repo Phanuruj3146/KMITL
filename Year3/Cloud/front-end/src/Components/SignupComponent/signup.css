@@ -1,0 +1,148 @@
+.signup-page{
+    height:100vh;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    width: 100%;
+    background: linear-gradient(
+    to right,
+    #B4D8FF 0%,
+    #B4D8FF 60%,
+    #292c43 60%,
+    #292c43 100%
+  );
+}
+.form-container{
+  background-color: #B4D8FF; /* Add background color for visualization */
+  padding: 20px;
+}
+.signup-form-container {
+  position: relative;
+  left: 10px;
+  height: 83%;
+  width:60%;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: calc(100vh-60px);
+  border-radius: 5px;
+  background-color: #B4D8FF;
+    }
+    
+    .signup-form-container h2 {
+      position: relative;
+      margin-bottom: 10%;
+      text-align: left;
+      color: #292C43;
+      font-size: 45px;
+    }
+    
+    .form-group {
+      margin-bottom: 15px;
+    }
+    
+    label {
+      display: block;
+      font-weight: bold;
+    }
+    
+    .signup-input {
+      width: 70%;
+      padding: 2%;
+      margin-bottom: 5%;
+      border-style:none;
+      border-radius: 10px;
+      font-size: 35px;
+    }
+    
+    .submit-button {
+      position: relative;
+      width: 60%;
+      margin-top: 19%;
+      background-color: #292c43;
+      color: #B4D8FF;
+      border: none;
+      height: 100%;
+      font-weight: 600;
+      border-radius: 25px;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 40px;
+      cursor: pointer;
+      border-style: solid;
+      border-color: #516CC4;
+      border-width: 5px;
+      bottom: 0%;
+      left: 0%;
+    }
+    
+    .submit-button:hover {
+      background-color: #0056b3;
+    }
+  .signupform-section{
+    background-color: #292c43; /* Add background color for visualization */
+    padding: 20px;
+    margin-left: 0%;
+    height: 95%;
+    width: 100%;
+    text-align: center;
+  }
+    
+  .signup-header-text{
+    position: relative;
+    color: #516CC4;
+    font-weight: bold;
+    margin-top: 7%;
+    margin-left: 0px;
+    font-size: 35px;
+    width: 100%;
+  }
+  .signup-welcome-text{
+    position: relative;
+    color: white;
+    font-weight: bold;
+    margin-top: 10%;
+    font-size: 80px;
+    margin-bottom: 46%;
+  }
+
+  .toLogin-page{
+    width:55%;
+    position: relative;
+    background-color: #B4D8FF;
+    color: #292c43;
+    border: none;
+    height: 70%;
+    min-height: 4%;
+    font-weight: 600;
+    border-radius: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 40px;
+    cursor: pointer;
+    margin-left: 8px;
+    border-style: solid;
+    border-color: #516CC4;
+    border-width: 5px;
+    bottom: 4.5%;
+    left: 0; 
+  }
+
+.show-hide-password{
+  width:20%;
+  position: relative;
+  background-color: #292c43;
+  color: #B4D8FF;
+  border: none;
+  height: 10%;
+  font-weight: 600;
+  border-radius: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 10px;
+  cursor: pointer;
+  margin-left: 8px;
+  border-style: none;
+  border-color: #516CC4;
+  border-width: 5px;
+  bottom: 0px;
+  left: 0%;
+}
