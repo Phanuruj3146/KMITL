@@ -1,0 +1,20 @@
+precision highp float;
+
+vec4 getBlurredColor(std::Texture2d tex, vec2 direction, vec2 uv) {
+  vec2 pixelOffset = direction / tex.size;
+
+  vec2 off1 = vec2(1.411764705882353) * pixelOffset;
+  vec2 off2 = vec2(3.2941176470588234) * pixelOffset;
+  vec2 off3 = vec2(5.176470588235294) * pixelOffset;
+  vec4 color = tex.sample(uv) * .1964825501511404;
+  color += (tex.sample(uv + off1) + tex.sample(uv - off1)) * .2969069646728344;
+  color += (tex.sample(uv + off2) + tex.sample(uv - off2)) * .09447039785044732;
+  color += (tex.sample(uv + off3) + tex.sample(uv - off3)) * .010381362401148057;
+  return color;
+}
+
+function<vec4(vec2)> main(std::Texture2d Texture, vec2 Direction) {
+  return [](vec2 uv) {
+    return getBlurredColor(Texture, Direction, uv);
+  };
+}

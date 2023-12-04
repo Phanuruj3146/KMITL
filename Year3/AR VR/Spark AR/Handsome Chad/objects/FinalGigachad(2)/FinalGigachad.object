@@ -1,0 +1,84 @@
+{
+  "modelName": "master3_d_object_model",
+  "name": "FinalGigachad",
+  "identifier": "master3_d_object_model:6417-89d3f8f2-16fa-4bb5-a25d-c6e88bca51f5",
+  "sourceIdentifier": "asset_collection_model:6421-89d3f8f2-16fa-4bb5-a25d-c6e88bca51f5",
+  "animationMask": {
+    "position": false,
+    "rotation": false,
+    "scale": false
+  },
+  "cameraVisibility": "back|front",
+  "depth": 0.10319402068853378,
+  "globalScaleFactor": 1,
+  "height": 0.200847327709198,
+  "hidden": false,
+  "layerIdentifier": "layer0",
+  "outputVisibility": "preview|capture",
+  "physicsEnabled": false,
+  "tags": [],
+  "transform": {
+    "rx": 0,
+    "ry": 0,
+    "rz": 0,
+    "sx": 1,
+    "sy": 1,
+    "sz": 1,
+    "x": 0,
+    "y": 0,
+    "z": 0
+  },
+  "width": 0.14910514652729034,
+  "children": [
+    {
+      "modelName": "mesh",
+      "name": "mesh_0",
+      "identifier": "mesh:6407-89d3f8f2-16fa-4bb5-a25d-c6e88bca51f5",
+      "animationMask": {
+        "position": false,
+        "rotation": false,
+        "scale": false
+      },
+      "cameraVisibility": "back|front",
+      "castShadow": false,
+      "hidden": false,
+      "layerIdentifier": "layer0",
+      "nodeName": "mesh_0",
+      "numberOfFaces": 2518,
+      "outputVisibility": "preview|capture",
+      "physicsEnabled": false,
+      "prefabIdentifier": "gltf:6411-89d3f8f2-16fa-4bb5-a25d-c6e88bca51f5",
+      "receiveShadow": false,
+      "renderPass": "main_scene",
+      "tags": [],
+      "transform": {
+        "rx": 0,
+        "ry": 0,
+        "rz": 0,
+        "sx": 1,
+        "sy": 1,
+        "sz": 1,
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "useEmbeddedBlendshapes": false,
+      "children": [
+        {
+          "modelName": "surfaces",
+          "identifier": "surfaces:6409-89d3f8f2-16fa-4bb5-a25d-c6e88bca51f5",
+          "children": [
+            {
+              "modelName": "surface",
+              "name": "surface0",
+              "identifier": "surface:6414-89d3f8f2-16fa-4bb5-a25d-c6e88bca51f5",
+              "isMaterialIdentifierEnabled": true,
+              "materialIdentifier": "dependent_material_model:6403-89d3f8f2-16fa-4bb5-a25d-c6e88bca51f5",
+              "surfaceGroupIdentifier": "6415-89d3f8f2-16fa-4bb5-a25d-c6e88bca51f5"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
