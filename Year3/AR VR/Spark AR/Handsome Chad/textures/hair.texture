@@ -1,0 +1,36 @@
+{
+  "modelName": "texture",
+  "name": "hair",
+  "identifier": "texture:1388-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+  "alphaPremultiplicationMode": "should_premultiply",
+  "assetDataHash": "2ce7ea929827ea49c4936bad7ad75fad",
+  "assetLocator": "textures/hair.png",
+  "colorEncoding": "linear",
+  "compressionQuality": "high",
+  "coordMapping": "none",
+  "excludeDuringExport": false,
+  "excludeFromPackage": false,
+  "filter": "bilinear",
+  "hasOfflineMipmaps": false,
+  "height": 1024,
+  "importIssues": {},
+  "isExternalAsset": true,
+  "smartTextureTargetSizeLimit": "largest",
+  "targetSize": "largest",
+  "uWrapMode": "clamp",
+  "vWrapMode": "clamp",
+  "width": 828,
+  "children": [
+    {
+      "modelName": "data_texture_metadata_model",
+      "name": "data_texture_metadata_model0",
+      "assetDataHash": "2ce7ea929827ea49c4936bad7ad75fad",
+      "colorCount": 256,
+      "detectedAlphaChannel": "eight_bit_full_range",
+      "detectedOriginalFormat": "png",
+      "entropyOfDistribution": 1.4541307787605686,
+      "pixelsHigh": 1024,
+      "pixelsWide": 828
+    }
+  ]
+}

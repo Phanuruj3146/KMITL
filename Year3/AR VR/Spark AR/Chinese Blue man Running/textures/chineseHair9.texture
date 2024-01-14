@@ -1,0 +1,36 @@
+{
+  "modelName": "texture",
+  "name": "chineseHair9",
+  "identifier": "texture:5211-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+  "alphaPremultiplicationMode": "should_premultiply",
+  "assetDataHash": "1b3e90c6b48753fa5c1707436ea4b3e4",
+  "assetLocator": "textures/chineseHair9.png",
+  "colorEncoding": "linear",
+  "compressionQuality": "high",
+  "coordMapping": "none",
+  "excludeDuringExport": false,
+  "excludeFromPackage": false,
+  "filter": "bilinear",
+  "hasOfflineMipmaps": false,
+  "height": 1024,
+  "importIssues": {},
+  "isExternalAsset": true,
+  "smartTextureTargetSizeLimit": "largest",
+  "targetSize": "largest",
+  "uWrapMode": "clamp",
+  "vWrapMode": "clamp",
+  "width": 825,
+  "children": [
+    {
+      "modelName": "data_texture_metadata_model",
+      "name": "data_texture_metadata_model0",
+      "assetDataHash": "1b3e90c6b48753fa5c1707436ea4b3e4",
+      "colorCount": 456,
+      "detectedAlphaChannel": "eight_bit_full_range",
+      "detectedOriginalFormat": "png",
+      "entropyOfDistribution": 2.145747344008967,
+      "pixelsHigh": 1024,
+      "pixelsWide": 825
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+x = -10:1:10;
+g = plot(x,2.^x);
+xlabel('x');
+ylabel('y');
+title('x vs y');
+g.LineStyle = "--";
+g.Color = "r";
+g.m
+MarkerSize = 15;
+MarkerEdgeColor = 'g';
+MarkerFaceColor = 'g';
+

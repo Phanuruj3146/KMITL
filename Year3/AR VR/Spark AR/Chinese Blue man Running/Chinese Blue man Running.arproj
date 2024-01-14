@@ -1,0 +1,856 @@
+{
+  "modelName": "document",
+  "name": "Effect",
+  "identifier": "document:3582-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+  "id": "35803cac1ef855b14786bd7ef8ca2a33bca5",
+  "revision": "12765e1a09c0cdbf84e4c83fc3144fdd32aeb",
+  "version": {
+    "dev": 0,
+    "patch": 0,
+    "prod": 174
+  },
+  "creatorIdentifier": "com.facebook.arstudio.skylight",
+  "creatorPlatform": "windows",
+  "creatorFileVersion": {
+    "dev": 0,
+    "patch": 0,
+    "prod": 174
+  },
+  "cameraFar": 50,
+  "cameraNear": 0.009999999776482582,
+  "measurementUnit": "meter",
+  "objects": [
+    {
+      "modelName": "assets_config_model",
+      "identifier": "assets_config_model:3793-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+      "categoriesOrder": [
+        "materials",
+        "textures"
+      ]
+    }
+  ],
+  "projectFormatType": "separated_files",
+  "usingPatchesV2": true,
+  "visual_programming": {
+    "graphs": [
+      {
+        "modelName": "patch_graph",
+        "identifier": "patch_graph:3670-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5"
+      }
+    ]
+  },
+  "children": [
+    {
+      "modelName": "textures",
+      "identifier": "textures:3588-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+      "children": [
+        {
+          "sectionFileLocation": "textures/FaceWarpAlphaMap.texture"
+        },
+        {
+          "sectionFileLocation": "textures/chineseHair.texture"
+        },
+        {
+          "sectionFileLocation": "textures/chineseHair2(1).texture"
+        },
+        {
+          "sectionFileLocation": "textures/chineseHair3.texture"
+        },
+        {
+          "sectionFileLocation": "textures/chineseHair4.texture"
+        },
+        {
+          "sectionFileLocation": "textures/chineseHair5.texture"
+        },
+        {
+          "sectionFileLocation": "textures/chineseHair6.texture"
+        },
+        {
+          "sectionFileLocation": "textures/chineseHair7.texture"
+        },
+        {
+          "sectionFileLocation": "textures/chineseHair8.texture"
+        },
+        {
+          "sectionFileLocation": "textures/chineseHair9.texture"
+        }
+      ]
+    },
+    {
+      "modelName": "materials",
+      "identifier": "materials:3590-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+      "children": [
+        {
+          "sectionFileLocation": "objects/ChineseFace/DefaultMaterial.material"
+        },
+        {
+          "sectionFileLocation": "materials/faceDistortionMaterial0.material"
+        },
+        {
+          "sectionFileLocation": "objects/ChineseFace2/DefaultMaterial0.material"
+        },
+        {
+          "sectionFileLocation": "objects/ChineseFace3/DefaultMaterial1.material"
+        },
+        {
+          "sectionFileLocation": "objects/ChineseFace4/DefaultMaterial2.material"
+        },
+        {
+          "sectionFileLocation": "objects/yourMesh5/DefaultMaterial3.material"
+        },
+        {
+          "sectionFileLocation": "objects/yourMesh (13)/DefaultMaterial4.material"
+        },
+        {
+          "sectionFileLocation": "objects/yourMesh (14)/DefaultMaterial5.material"
+        },
+        {
+          "sectionFileLocation": "objects/yourMesh (15)/DefaultMaterial6.material"
+        },
+        {
+          "sectionFileLocation": "objects/yourMesh (16)/DefaultMaterial7.material"
+        },
+        {
+          "sectionFileLocation": "materials/material0-2.material"
+        }
+      ]
+    },
+    {
+      "modelName": "prefabs",
+      "identifier": "prefabs:3592-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+      "children": [
+        {
+          "modelName": "gltf",
+          "name": "mesh_0",
+          "identifier": "gltf:3909-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+          "sourceIdentifier": "master3_d_object_model:3915-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+          "assetLocator": "3910-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "mesh_1",
+          "identifier": "gltf:4351-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+          "sourceIdentifier": "master3_d_object_model:4357-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+          "assetLocator": "4352-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "mesh_2",
+          "identifier": "gltf:4383-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+          "sourceIdentifier": "master3_d_object_model:4389-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+          "assetLocator": "4384-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "mesh_3",
+          "identifier": "gltf:4415-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+          "sourceIdentifier": "master3_d_object_model:4421-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+          "assetLocator": "4416-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "mesh_4",
+          "identifier": "gltf:4447-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+          "sourceIdentifier": "master3_d_object_model:4453-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+          "assetLocator": "4448-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "mesh_5",
+          "identifier": "gltf:4479-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+          "sourceIdentifier": "master3_d_object_model:4485-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+          "assetLocator": "4480-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "mesh_6",
+          "identifier": "gltf:4517-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+          "sourceIdentifier": "master3_d_object_model:4523-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+          "assetLocator": "4518-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "mesh_7",
+          "identifier": "gltf:4549-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+          "sourceIdentifier": "master3_d_object_model:4555-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+          "assetLocator": "4550-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5.glb",
+          "isExternalAsset": false
+        },
+        {
+          "modelName": "gltf",
+          "name": "mesh_8",
+          "identifier": "gltf:4581-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+          "sourceIdentifier": "master3_d_object_model:4587-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+          "assetLocator": "4582-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5.glb",
+          "isExternalAsset": false
+        }
+      ]
+    },
+    {
+      "modelName": "3_d_objects_model",
+      "identifier": "3_d_objects_model:3594-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+      "children": [
+        {
+          "sectionFileLocation": "objects/ChineseFace/ChineseFace.object"
+        },
+        {
+          "sectionFileLocation": "objects/ChineseFace2/ChineseFace2.object"
+        },
+        {
+          "sectionFileLocation": "objects/ChineseFace3/ChineseFace3.object"
+        },
+        {
+          "sectionFileLocation": "objects/ChineseFace4/ChineseFace4.object"
+        },
+        {
+          "sectionFileLocation": "objects/yourMesh5/yourMesh5.object"
+        },
+        {
+          "sectionFileLocation": "objects/yourMesh (13)/yourMesh (13).object"
+        },
+        {
+          "sectionFileLocation": "objects/yourMesh (14)/yourMesh (14).object"
+        },
+        {
+          "sectionFileLocation": "objects/yourMesh (15)/yourMesh (15).object"
+        },
+        {
+          "sectionFileLocation": "objects/yourMesh (16)/yourMesh (16).object"
+        }
+      ]
+    },
+    {
+      "sectionFileLocation": "Chinese Blue man Running.scene"
+    },
+    {
+      "modelName": "layers",
+      "identifier": "layers:3598-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+      "children": [
+        {
+          "modelName": "layer",
+          "name": "layer0",
+          "identifier": "layer:3664-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+          "color": "0xff8c72ca"
+        }
+      ]
+    },
+    {
+      "modelName": "asset_collections_model",
+      "identifier": "asset_collections_model:3602-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+      "children": [
+        {
+          "modelName": "asset_collection_model",
+          "name": "ChineseFace",
+          "identifier": "asset_collection_model:3919-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+          "assetDataHash": "2755f866be993dcb1ab4f615aa2c233f",
+          "assetLocator": "objects/ChineseFace/ChineseFace.obj",
+          "authoringTool": "",
+          "excludeDuringExport": true,
+          "isExternalAsset": true,
+          "master3DInstanceSourceHash": "2755f866be993dcb1ab4f615aa2c233f",
+          "children": [
+            {
+              "modelName": "unsupportedFeatures",
+              "name": "unsupportedFeatures0",
+              "identifier": "unsupportedFeatures:3917-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+              "namesForFeatureType": {
+                "Material": [
+                  "DefaultMaterial"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "modelName": "asset_collection_model",
+          "name": "ChineseFace2",
+          "identifier": "asset_collection_model:4361-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+          "assetDataHash": "3fab9db5e6844d477567ba471ecfce7f",
+          "assetLocator": "objects/ChineseFace2/ChineseFace2.obj",
+          "authoringTool": "",
+          "excludeDuringExport": true,
+          "isExternalAsset": true,
+          "master3DInstanceSourceHash": "3fab9db5e6844d477567ba471ecfce7f",
+          "children": [
+            {
+              "modelName": "unsupportedFeatures",
+              "name": "unsupportedFeatures0",
+              "identifier": "unsupportedFeatures:4359-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+              "namesForFeatureType": {
+                "Material": [
+                  "DefaultMaterial"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "modelName": "asset_collection_model",
+          "name": "ChineseFace3",
+          "identifier": "asset_collection_model:4393-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+          "assetDataHash": "62960590f9970b853be45b44046d974b",
+          "assetLocator": "objects/ChineseFace3/ChineseFace3.obj",
+          "authoringTool": "",
+          "excludeDuringExport": true,
+          "isExternalAsset": true,
+          "master3DInstanceSourceHash": "62960590f9970b853be45b44046d974b",
+          "children": [
+            {
+              "modelName": "unsupportedFeatures",
+              "name": "unsupportedFeatures0",
+              "identifier": "unsupportedFeatures:4391-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+              "namesForFeatureType": {
+                "Material": [
+                  "DefaultMaterial"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "modelName": "asset_collection_model",
+          "name": "ChineseFace4",
+          "identifier": "asset_collection_model:4425-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+          "assetDataHash": "2637e6ee5d09a5a978d52bff0f97f6a3",
+          "assetLocator": "objects/ChineseFace4/ChineseFace4.obj",
+          "authoringTool": "",
+          "excludeDuringExport": true,
+          "isExternalAsset": true,
+          "master3DInstanceSourceHash": "2637e6ee5d09a5a978d52bff0f97f6a3",
+          "children": [
+            {
+              "modelName": "unsupportedFeatures",
+              "name": "unsupportedFeatures0",
+              "identifier": "unsupportedFeatures:4423-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+              "namesForFeatureType": {
+                "Material": [
+                  "DefaultMaterial"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "modelName": "asset_collection_model",
+          "name": "yourMesh5",
+          "identifier": "asset_collection_model:4457-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+          "assetDataHash": "29d28d082541491b61f7f3cc4a02653c",
+          "assetLocator": "objects/yourMesh5/yourMesh5.obj",
+          "authoringTool": "",
+          "excludeDuringExport": true,
+          "isExternalAsset": true,
+          "master3DInstanceSourceHash": "29d28d082541491b61f7f3cc4a02653c",
+          "children": [
+            {
+              "modelName": "unsupportedFeatures",
+              "name": "unsupportedFeatures0",
+              "identifier": "unsupportedFeatures:4455-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+              "namesForFeatureType": {
+                "Material": [
+                  "DefaultMaterial"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "modelName": "asset_collection_model",
+          "name": "yourMesh (13)",
+          "identifier": "asset_collection_model:4489-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+          "assetDataHash": "eeefda883be85d078feea3ac11d76b33",
+          "assetLocator": "objects/yourMesh (13)/yourMesh (13).obj",
+          "authoringTool": "",
+          "excludeDuringExport": true,
+          "isExternalAsset": true,
+          "master3DInstanceSourceHash": "eeefda883be85d078feea3ac11d76b33",
+          "children": [
+            {
+              "modelName": "unsupportedFeatures",
+              "name": "unsupportedFeatures0",
+              "identifier": "unsupportedFeatures:4487-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+              "namesForFeatureType": {
+                "Material": [
+                  "DefaultMaterial"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "modelName": "asset_collection_model",
+          "name": "yourMesh (14)",
+          "identifier": "asset_collection_model:4527-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+          "assetDataHash": "f965a32e30274807113705573f407295",
+          "assetLocator": "objects/yourMesh (14)/yourMesh (14).obj",
+          "authoringTool": "",
+          "excludeDuringExport": true,
+          "isExternalAsset": true,
+          "master3DInstanceSourceHash": "f965a32e30274807113705573f407295",
+          "children": [
+            {
+              "modelName": "unsupportedFeatures",
+              "name": "unsupportedFeatures0",
+              "identifier": "unsupportedFeatures:4525-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+              "namesForFeatureType": {
+                "Material": [
+                  "DefaultMaterial"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "modelName": "asset_collection_model",
+          "name": "yourMesh (15)",
+          "identifier": "asset_collection_model:4559-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+          "assetDataHash": "bd5528415f1f7666b82718fc95f7ff95",
+          "assetLocator": "objects/yourMesh (15)/yourMesh (15).obj",
+          "authoringTool": "",
+          "excludeDuringExport": true,
+          "isExternalAsset": true,
+          "master3DInstanceSourceHash": "bd5528415f1f7666b82718fc95f7ff95",
+          "children": [
+            {
+              "modelName": "unsupportedFeatures",
+              "name": "unsupportedFeatures0",
+              "identifier": "unsupportedFeatures:4557-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+              "namesForFeatureType": {
+                "Material": [
+                  "DefaultMaterial"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "modelName": "asset_collection_model",
+          "name": "yourMesh (16)",
+          "identifier": "asset_collection_model:4591-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+          "assetDataHash": "5c434b8c90e99347b51449157931f02f",
+          "assetLocator": "objects/yourMesh (16)/yourMesh (16).obj",
+          "authoringTool": "",
+          "excludeDuringExport": true,
+          "isExternalAsset": true,
+          "master3DInstanceSourceHash": "5c434b8c90e99347b51449157931f02f",
+          "children": [
+            {
+              "modelName": "unsupportedFeatures",
+              "name": "unsupportedFeatures0",
+              "identifier": "unsupportedFeatures:4589-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+              "namesForFeatureType": {
+                "Material": [
+                  "DefaultMaterial"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "modelName": "patch_graphs_model",
+      "identifier": "patch_graphs_model:3608-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5"
+    },
+    {
+      "modelName": "scripts_model",
+      "identifier": "scripts_model:3616-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+      "children": [
+        {
+          "modelName": "script_bridging_variables_model",
+          "identifier": "script_bridging_variables_model:3618-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5"
+        }
+      ]
+    },
+    {
+      "modelName": "bundled_packages_model",
+      "identifier": "bundled_packages_model:3624-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5"
+    },
+    {
+      "modelName": "exportConfig",
+      "identifier": "exportConfig:3628-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+      "children": [
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:4201-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+          "accuracy": "best",
+          "targetFormat": 1
+        },
+        {
+          "modelName": "textureExportConfig",
+          "identifier": "textureExportConfig:4203-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+          "accuracy": "best",
+          "targetFormat": 2
+        }
+      ]
+    },
+    {
+      "modelName": "manifest",
+      "identifier": "manifest:3630-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+      "additionalEnabledChanges": null,
+      "assistantAppIDs": [
+        "2320137961422959"
+      ],
+      "assistantClientToken": null,
+      "assistantIncludeInDevelopmentArtifacts": false,
+      "assistantQuickTestEnabled": true,
+      "assistantStorageEnabled": true,
+      "assistantUseWit": false,
+      "audioEnableAudioGraphComponents": false,
+      "audioEnableAudioTransformationsApi": false,
+      "bodyTrackingMinVersion": 101,
+      "cameraControlDefaultCameraFacing": "unspecified",
+      "dynamicTextAltitude": false,
+      "dynamicTextDate": false,
+      "dynamicTextLocation": false,
+      "dynamicTextTranslation": false,
+      "dynamicTextWeather": false,
+      "effectDisablesAudioPreview": false,
+      "effectDisablesMicrophone": false,
+      "effectForceAsyncScripting": false,
+      "effectForcesSynchronousScripting": false,
+      "effectHasAmbientAudio": false,
+      "effectHasAudioGraphApi": false,
+      "effectHasTriggeredAudio": false,
+      "effectImageAntiAliasingEdgeSharpness": 0.5,
+      "effectImageAntiAliasingEdgeThreshold": 0.5,
+      "effectImageAntiAliasingTechnique": "fxaa",
+      "effectPbrClearcoatMaterialExtension": false,
+      "effectPbrIorMaterialExtension": false,
+      "effectPbrSheenMaterialExtension": false,
+      "effectPbrSpecularMaterialExtension": false,
+      "effectPbrTransmissionMaterialExtension": false,
+      "effectRecordingFromMic": false,
+      "effectUses4KTextures": false,
+      "effectUsesAnimationPlaybackController": false,
+      "effectUsesAnimationScriptingModule": false,
+      "effectUsesAppLauncher": false,
+      "effectUsesAssistant": false,
+      "effectUsesAudio": false,
+      "effectUsesAudioLegacyMicFork": false,
+      "effectUsesAudioMixer": false,
+      "effectUsesAudioSpatialEmitter": false,
+      "effectUsesAudioTimestamps": false,
+      "effectUsesAugmentControl": false,
+      "effectUsesAugmentGrouping": false,
+      "effectUsesAugmentSizeControl": false,
+      "effectUsesAutomaticAlphaSort": false,
+      "effectUsesAutomaticInstructions": true,
+      "effectUsesBlockModulesConfigExtras": false,
+      "effectUsesBlocks": false,
+      "effectUsesBlocksDownloadable": false,
+      "effectUsesBlocksScripting": false,
+      "effectUsesBodyTracking": false,
+      "effectUsesBodyTracking2DKeyPoints": false,
+      "effectUsesBoundingBoxScripting": false,
+      "effectUsesBoundingBoxUtilities": false,
+      "effectUsesCameraControl": false,
+      "effectUsesCameraInfoScriptingModule": false,
+      "effectUsesCameraShare": false,
+      "effectUsesComponentEvaluation": false,
+      "effectUsesComposedLocally": false,
+      "effectUsesComposedMaterial": false,
+      "effectUsesControllers": false,
+      "effectUsesCustomEngineSDK": false,
+      "effectUsesCustomFonts": false,
+      "effectUsesCustomMaterial": false,
+      "effectUsesCustomMaterialAndShaderCodeAsset": false,
+      "effectUsesCustomPipeline": false,
+      "effectUsesDSP": false,
+      "effectUsesDate": false,
+      "effectUsesDebugPatch": false,
+      "effectUsesDeltaTime": false,
+      "effectUsesDepth": false,
+      "effectUsesDepthData": false,
+      "effectUsesDepthShaderRead": false,
+      "effectUsesDeviceMotion": false,
+      "effectUsesDiagnosticsScriptingModule": false,
+      "effectUsesDirectionalLightEstimation": false,
+      "effectUsesDspAudioAnalyzer": false,
+      "effectUsesDspBitCrusher": false,
+      "effectUsesDspCompressor": false,
+      "effectUsesDspDelay": false,
+      "effectUsesDspDenoiser": false,
+      "effectUsesDspDistortion": false,
+      "effectUsesDspEnergyMeter": false,
+      "effectUsesDspModulator": false,
+      "effectUsesDspParametricEqualizer": false,
+      "effectUsesDspPitchShifter": false,
+      "effectUsesDspReverb": false,
+      "effectUsesDspVocoder": false,
+      "effectUsesDynamicCapabilities": false,
+      "effectUsesDynamicInstructions": false,
+      "effectUsesDynamicScriptProperties": false,
+      "effectUsesDynamicText": false,
+      "effectUsesEmbeddedVideo": false,
+      "effectUsesEnvironmentTexturePatch": false,
+      "effectUsesExperienceControl": false,
+      "effectUsesExternalBlocks": false,
+      "effectUsesExternalFonts": false,
+      "effectUsesExternalMusicSelection": false,
+      "effectUsesExternalTextures": false,
+      "effectUsesExternalTexturesAudio": false,
+      "effectUsesExternalVideo": false,
+      "effectUsesExternalVideoStream": false,
+      "effectUsesFBA": false,
+      "effectUsesFaceDistortion": true,
+      "effectUsesFaceExpression52Blendshapes": false,
+      "effectUsesFaceExpressionExperimental": false,
+      "effectUsesFaceExpressionFitting": false,
+      "effectUsesFaceExtraction": false,
+      "effectUsesFaceTracker": true,
+      "effectUsesFaceTracker3D": true,
+      "effectUsesFaceTracker96": false,
+      "effectUsesFaceTrackingScripting2D": false,
+      "effectUsesFaceTrueScale": false,
+      "effectUsesFaceWave": false,
+      "effectUsesFacialExpressionRecognition": false,
+      "effectUsesFacialGestureRecognition": false,
+      "effectUsesFieldOfView": false,
+      "effectUsesFingerTracking": false,
+      "effectUsesFonts": false,
+      "effectUsesFormFactor": false,
+      "effectUsesFrameBrightness": false,
+      "effectUsesGalleryPicker": false,
+      "effectUsesGenericML": false,
+      "effectUsesGlobalTransform": false,
+      "effectUsesGlslEs300Features": false,
+      "effectUsesGltfPbrShader": false,
+      "effectUsesGraphQL": false,
+      "effectUsesHairSegmentation": false,
+      "effectUsesHalfFloatRenderPass": false,
+      "effectUsesHandGestureKeypoints": false,
+      "effectUsesHandTracker": false,
+      "effectUsesHapticFeedback": false,
+      "effectUsesHeadsetInfo": false,
+      "effectUsesHmdNetworkingAPI": false,
+      "effectUsesI18n": false,
+      "effectUsesIdTracker": false,
+      "effectUsesImageAntiAliasing": false,
+      "effectUsesImageAssets": false,
+      "effectUsesImageBasedLighting": false,
+      "effectUsesInstruction": true,
+      "effectUsesIntent": false,
+      "effectUsesInterEffectLinking": false,
+      "effectUsesInternalScriptingAPI": false,
+      "effectUsesIrisTracking": false,
+      "effectUsesJavaScript": false,
+      "effectUsesJavaScriptRuntimeForPatches": false,
+      "effectUsesJavaScriptScripting": false,
+      "effectUsesJavaScriptShaders": false,
+      "effectUsesJavascriptToPatchesBridging": false,
+      "effectUsesLayers": false,
+      "effectUsesLocale": false,
+      "effectUsesLocation": false,
+      "effectUsesLocationAirportData": false,
+      "effectUsesMaterialsScriptingModule": false,
+      "effectUsesMaxParticipants": false,
+      "effectUsesMicrophone": false,
+      "effectUsesMicrophoneV2": false,
+      "effectUsesMovingTargetTracking": false,
+      "effectUsesMultipeer": false,
+      "effectUsesMultipeerMessaging": false,
+      "effectUsesMultiplane": false,
+      "effectUsesMultiplayer": false,
+      "effectUsesMultipleRenderTargets": false,
+      "effectUsesMusic": false,
+      "effectUsesNativeUIControl": false,
+      "effectUsesNativeUIControlEditableText": false,
+      "effectUsesNativeUIControlEditableTextExitCB": false,
+      "effectUsesNativeUIControlPicker": false,
+      "effectUsesNativeUIControlPickerRemoteImages": false,
+      "effectUsesNativeUIControlRawTextInput": false,
+      "effectUsesNativeUIControlSlider": false,
+      "effectUsesNativeUIControlSliderTypeColor": false,
+      "effectUsesNetworking": false,
+      "effectUsesNetworkingScriptAPI": false,
+      "effectUsesObjectCapture": false,
+      "effectUsesObjectTracking": false,
+      "effectUsesOpticalFlow": false,
+      "effectUsesOpusCodec": false,
+      "effectUsesOverlayOutput": false,
+      "effectUsesPBRMaterial": false,
+      "effectUsesParticipant": false,
+      "effectUsesParticleSystem": false,
+      "effectUsesPeerOutput": false,
+      "effectUsesPeerVideoStream": false,
+      "effectUsesPermissions": false,
+      "effectUsesPersistence": false,
+      "effectUsesPersistenceCaptureScope": false,
+      "effectUsesPersistenceSharedScope": false,
+      "effectUsesPersonalization": false,
+      "effectUsesPhysics": false,
+      "effectUsesPhysicsSync": false,
+      "effectUsesPlaneNormal": false,
+      "effectUsesPlaneTrackerTrackTextureAPI": false,
+      "effectUsesPlatformEvents": false,
+      "effectUsesPlatformEventsDocumentScoped": false,
+      "effectUsesPlatformFunctions": false,
+      "effectUsesPlatformTextures": false,
+      "effectUsesPlaybackInfo": false,
+      "effectUsesPortalPose": false,
+      "effectUsesPreciseLocation": false,
+      "effectUsesPrefabScriptingModule": false,
+      "effectUsesPreviewCaptureOutputs": false,
+      "effectUsesRGBCameraTexture": false,
+      "effectUsesRTRMapping": false,
+      "effectUsesRandomScriptingModule": false,
+      "effectUsesReactiveScriptingModule": false,
+      "effectUsesRealScaleEstimation": false,
+      "effectUsesRealScaleEstimationWithFallback": false,
+      "effectUsesRecognition": false,
+      "effectUsesRecognitionTracking": false,
+      "effectUsesRecordedSignalsForSamplers": false,
+      "effectUsesRemote3DModels": false,
+      "effectUsesRemoteMaps": false,
+      "effectUsesRenderPasses": false,
+      "effectUsesRenderSettingsHigh": false,
+      "effectUsesRingTryOn": false,
+      "effectUsesRotateVector": false,
+      "effectUsesSceneDepth": false,
+      "effectUsesSceneDepthWithFallback": false,
+      "effectUsesSceneObjectTags": false,
+      "effectUsesSceneRenderPassResolutionAspectRatio": false,
+      "effectUsesSceneScriptingModule": false,
+      "effectUsesScriptAnalytics": false,
+      "effectUsesScriptingDynamicInstantiation": false,
+      "effectUsesSegmentation": false,
+      "effectUsesSegmentationType": false,
+      "effectUsesShaderCode": false,
+      "effectUsesShaderPicking": false,
+      "effectUsesShadows": false,
+      "effectUsesSkinSegmentation": false,
+      "effectUsesSkinSmoothing": false,
+      "effectUsesSpatialGesture": false,
+      "effectUsesSpatialHandTracking": false,
+      "effectUsesSplitScreen": false,
+      "effectUsesStaticTargetTracking": false,
+      "effectUsesStyleTransfer": false,
+      "effectUsesSupportedOrientations": false,
+      "effectUsesSvg": false,
+      "effectUsesSyncDomApis": false,
+      "effectUsesTargetRecognition": false,
+      "effectUsesTextAssets": false,
+      "effectUsesTextCaptions": false,
+      "effectUsesTextExtrusion": false,
+      "effectUsesTexturesScriptingModule": false,
+      "effectUsesTimeScriptingModule": false,
+      "effectUsesToasterTracking": false,
+      "effectUsesTouchGestures": false,
+      "effectUsesTwoDimensionalText": false,
+      "effectUsesTypeScript": false,
+      "effectUsesUiCore": false,
+      "effectUsesUiPlanarBackend": false,
+      "effectUsesUnifiedTargetTracking": false,
+      "effectUsesUnitsScriptingModule": false,
+      "effectUsesVariadicMath": false,
+      "effectUsesVertexTextureFetch": false,
+      "effectUsesVisualShaders": false,
+      "effectUsesVisualShadersSdf": false,
+      "effectUsesVoiceInteraction": false,
+      "effectUsesWarpPostProcessor": false,
+      "effectUsesWarpPreProcessor": true,
+      "effectUsesWarpSmoothing": true,
+      "effectUsesWeather": false,
+      "effectUsesWebPTexture": false,
+      "effectUsesWebsockets": false,
+      "effectUsesWorldTracker": false,
+      "effectUsesWorldTrackerEnvironmentLight": false,
+      "effectUsesWorldTrackerJSAPI": false,
+      "effectUsesWorldTrackingWorldMap": false,
+      "effectUsesWorldUnderstanding": false,
+      "effectUsesWorldUnderstandingV2": false,
+      "effectUsesWriteableSignalSource": false,
+      "engineSDKVersion": "174.0",
+      "externalTexturesWhitelistedDomains": null,
+      "faceExpressionFittingMinVersion": 15,
+      "faceExpressionFittingRTRRetargetingMinVersion": 1,
+      "faceTrackerIsEnabled": false,
+      "faceTrackerMaxFaces": 1,
+      "faceTrackerMinVersion": 10,
+      "facewaveMinVersion": 1,
+      "hairSegmentationMinVersion": 1,
+      "handTrackerMaxHands": 2,
+      "handTrackerMinVersion": 3,
+      "instructionFindAnImageBackCameraEnabled": true,
+      "instructionFindAnImageFrontCameraEnabled": true,
+      "instructionFindBodyBackCameraEnabled": true,
+      "instructionFindBodyFrontCameraEnabled": true,
+      "instructionFindFaceBackCameraEnabled": true,
+      "instructionFindFaceFrontCameraEnabled": true,
+      "instructionFindHandBackCameraEnabled": true,
+      "instructionFindHandFrontCameraEnabled": true,
+      "instructionFindPersonBackCameraEnabled": true,
+      "instructionFindPersonFrontCameraEnabled": true,
+      "instructionTokens": null,
+      "interEffectLinkingEffectIds": null,
+      "internalScriptingAPIDelay": false,
+      "internalScriptingAPIDeprecatedParticles": false,
+      "internalScriptingAPIEventStream": false,
+      "internalScriptingAPIExperimentalCameraInfo": false,
+      "internalScriptingAPIGlobalTransform": false,
+      "manuallyEnabledItemsIds": null,
+      "maxParticipantsCount": 0,
+      "multiclassSegmentationMinVersion": 3004,
+      "objectTrackerMaxObjects": 1,
+      "optionalCapabilityItemIds": [],
+      "persistenceWhitelistedKeys": null,
+      "personalizationSpecialOccasion": "none",
+      "platformUsage": {},
+      "recognitionMinVersion": 2,
+      "ringTryOnMinVersion": 1,
+      "sceneDepthMinVersion": 1,
+      "sceneDepthWithFallbackMinVersion": 1,
+      "segmentationMinVersion": 2,
+      "shaderPostProcessor": false,
+      "shaderPreProcessor": false,
+      "supportsLandscape": false,
+      "supportsPortrait": true,
+      "supportsWildcardDomainsWhitelisting": false,
+      "targetRecognitionMinVersion": 2,
+      "touchGesturesSupportsLongPress": false,
+      "touchGesturesSupportsPan": false,
+      "touchGesturesSupportsPinch": false,
+      "touchGesturesSupportsRawTouch": false,
+      "touchGesturesSupportsRotate": false,
+      "touchGesturesSupportsTap": false,
+      "whitelistedDomains": null,
+      "witAppId": null,
+      "witClientToken": null,
+      "worldTrackerBackCameraEnabled": true,
+      "worldTrackerFrontCameraEnabled": true,
+      "worldTrackerMode": "plane",
+      "worldTrackerUsesFaceTracker": false
+    },
+    {
+      "modelName": "target",
+      "identifier": "target:3640-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+      "targetPlatforms": [
+        "instagram",
+        "facebook"
+      ],
+      "targetUseCases": [
+        "STORIES"
+      ]
+    },
+    {
+      "modelName": "scripting_config_model",
+      "identifier": "scripting_config_model:3650-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+      "forceStrictModeCompilation": true
+    },
+    {
+      "modelName": "graphicsConfig",
+      "identifier": "graphicsConfig:3672-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5"
+    },
+    {
+      "modelName": "videos_model",
+      "identifier": "videos_model:3773-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5"
+    }
+  ]
+}

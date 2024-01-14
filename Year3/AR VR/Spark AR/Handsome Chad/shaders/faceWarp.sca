@@ -1,0 +1,17 @@
+vec4 getWarpedColor(std::Texture2d inputImage, std::Texture2d warpMap, vec2 uv) {
+  // Get the displacement value from the warp map
+  vec4 packedDisplacement = warpMap.sample(uv);
+
+  // Unpack displacement
+  vec2 displacement = (packedDisplacement.xy - 0.5) * (1.0 / 5.0);
+  displacement.y *= -1.0;
+
+  vec4 color = inputImage.sample(uv + displacement);
+  return vec4(color.rgb, step(0.01, packedDisplacement.a));
+}
+
+function<vec4(vec2)> main(std::Texture2d Texture, std::Texture2d WarpMap) {
+  return [](vec2 uv) {
+    return getWarpedColor(Texture, WarpMap, uv);
+  };
+}

@@ -1,0 +1,26 @@
+{
+  "modelName": "blend_shape_to_warp_map_material_model",
+  "name": "faceDistortionMaterial0",
+  "identifier": "blend_shape_to_warp_map_material_model:4195-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+  "alphaTestEnabled": false,
+  "alphaTestThreshold": 0,
+  "cullMode": "back",
+  "diffuseTextureName": "texture:4199-3cac1ef8-55b1-4786-bd7e-f8ca2a33bca5",
+  "diffuseTextureTransform": {
+    "offsetU": 0,
+    "offsetV": 0,
+    "rotation": 0,
+    "scaleU": 1,
+    "scaleV": 1
+  },
+  "doubleSided": false,
+  "importIssues": {},
+  "isDiffuseTextureIdentifierEnabled": true,
+  "readDepth": true,
+  "transparency": 1,
+  "writeDepth": true,
+  "writesToColorBufferAlpha": true,
+  "writesToColorBufferBlue": true,
+  "writesToColorBufferGreen": true,
+  "writesToColorBufferRed": true
+}
