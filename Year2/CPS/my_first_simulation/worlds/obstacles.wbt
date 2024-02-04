@@ -1,0 +1,146 @@
+#VRML_SIM R2022b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/factory/containers/protos/WoodenBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/floors/protos/Floor.proto"
+
+WorldInfo {
+  basicTimeStep 16
+}
+Viewpoint {
+  orientation -0.3995549457491791 0.252205765756944 0.8813331362466319 2.1214695368840846
+  position 1.6527419093399005 -3.438251781198121 4.136222178807405
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+WoodenBox {
+  translation -0.1979060779432257 -0.19530322505467526 0.04996076000000004
+  rotation 0.6411420249656378 0.42175088339673095 -0.6411420249656378 2.343361851933137
+  size 0.1 0.1 0.1
+  mass 0.2
+}
+WoodenBox {
+  translation -0.2914665283811072 0.15250715578993126 0.04996076000000001
+  rotation 2.7376768048019616e-17 1.65727171475905e-17 0.9999999999999999 1.012280007941671
+  name "wooden box(2)"
+  size 0.1 0.1 0.1
+  mass 0.2
+}
+WoodenBox {
+  translation 0.19868599723840663 0.2834803907928809 0.049960760000000035
+  rotation 0.23449606058478928 0.6873905722259415 0.6873905722259416 2.680923971599561
+  name "wooden box(1)"
+  size 0.1 0.1 0.1
+  mass 0.2
+}
+E-puck {
+  hidden position_0_0 1717.65031871891
+  hidden position_0_1 1717.6503188917636
+  hidden linearVelocity_0 3.106621612487527e-07 5.953794897095577e-09 -5.395406148522852e-09
+  hidden angularVelocity_0 -4.7080622861243827e-07 -1.416495955795159e-09 8.386615828688326e-06
+  hidden translation_1 0 0.025999999999999662 0.02
+  hidden rotation_1 0 -0.9999999999999999 0 3.9424554482966374
+  hidden linearVelocity_1 3.107796508879544e-07 -2.0974487558799026e-07 -5.318646612018076e-09
+  hidden angularVelocity_1 -0.6280003136968848 1.5550905966847483e-05 8.396588974424982e-06
+  hidden translation_2 0 -0.025999999999999374 0.02
+  hidden rotation_2 0 -1 0 3.9424552754430766
+  hidden linearVelocity_2 3.107918364554467e-07 2.2636104871478835e-07 -5.245988110590244e-09
+  hidden angularVelocity_2 -0.6280003136979259 1.5529603154603706e-05 8.380651683035146e-06
+  translation 0.4879756209541603 0.9381335386425109 -2.8427126751478377e-05
+  rotation 0.0015651375907600284 -0.0015651765839222503 0.9999975502802909 1.5707740940376946
+  controller "epuck_go_forward"
+}
+Floor {
+  size 2 2
+}
+Solid {
+  translation -0.227316 0.511074 0.11431943750890611
+  children [
+    DEF ball Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 1
+        roughness 1
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.12
+        subdivision 2
+      }
+    }
+  ]
+  boundingObject USE ball
+  physics Physics {
+  }
+  linearVelocity 0 0 2.280801555770359e-16
+}
+Solid {
+  translation 0 1 0.05
+  children [
+    DEF wall Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "../../../Downloads/istockphoto-1156111101-170667a.jpg"
+          ]
+        }
+        metalness 0
+      }
+      geometry Box {
+        size 2 0.05 0.1
+      }
+    }
+  ]
+  name "solid(2)"
+  boundingObject USE wall
+}
+Solid {
+  translation 0 -0.48 0.11431943750890611
+  children [
+    DEF ball Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 1
+        roughness 1
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.12
+        subdivision 2
+      }
+    }
+  ]
+  name "solid(1)"
+  boundingObject USE ball
+  physics Physics {
+  }
+  linearVelocity 0 0 2.280801555770359e-16
+}
+Solid {
+  translation 0 -1 0.05
+  children [
+    USE wall
+  ]
+  name "solid(3)"
+  boundingObject USE wall
+}
+Solid {
+  translation 1 0 0.05
+  rotation 0 0 1 -1.5707953071795862
+  children [
+    USE wall
+  ]
+  name "solid(4)"
+  boundingObject USE wall
+}
+Solid {
+  translation -1 0 0.05
+  rotation 0 0 1 1.5708
+  children [
+    USE wall
+  ]
+  name "solid(5)"
+  boundingObject USE wall
+}

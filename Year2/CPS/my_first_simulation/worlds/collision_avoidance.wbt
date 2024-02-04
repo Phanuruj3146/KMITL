@@ -1,0 +1,146 @@
+#VRML_SIM R2022b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/factory/containers/protos/WoodenBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/floors/protos/Floor.proto"
+
+WorldInfo {
+  basicTimeStep 16
+}
+Viewpoint {
+  orientation -0.4458524904311855 0.32396980804508757 0.8344214284470042 2.047217173698207
+  position 0.5299237012314801 -1.5202602796825804 1.964916315194829
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+WoodenBox {
+  translation -0.19822607049024715 -0.19534043461667178 0.04996074291503259
+  rotation -0.6418180763539705 -0.4195437681866513 0.641913221114065 -2.3470101326703374
+  size 0.1 0.1 0.1
+  mass 0.2
+}
+WoodenBox {
+  translation -0.2914665283811072 0.15250715578993126 0.04996076000000001
+  rotation 1.3961715555784724e-17 1.9295730162302796e-17 0.9999999999999999 1.012280007941671
+  name "wooden box(2)"
+  size 0.1 0.1 0.1
+  mass 0.2
+}
+WoodenBox {
+  translation 0.1984396243280822 0.2837186401522623 0.049960759999586754
+  rotation 0.235732240313785 0.6871791290950398 0.6871791290579384 2.678581121812638
+  name "wooden box(1)"
+  size 0.1 0.1 0.1
+  mass 0.2
+}
+E-puck {
+  hidden position_0_0 426.42206458584917
+  hidden position_0_1 239.2603129936646
+  hidden linearVelocity_0 0.03211764584922111 -0.054154528539844746 -2.5907958199361037e-05
+  hidden angularVelocity_0 -0.012716958475296934 -0.005882935841952286 -2.216281736033632
+  hidden rotation_1 0 -1 0 4.776991750659351
+  hidden linearVelocity_1 0.061196935554379085 -0.10330480091613281 -8.567848526901164e-07
+  hidden angularVelocity_1 5.392014509045204 3.1925818517856563 -2.227394070866353
+  hidden rotation_2 0 -1 0 3.4431839546027665
+  hidden linearVelocity_2 0.002752309095922857 -0.004480033461519971 2.7074776537023738e-06
+  hidden angularVelocity_2 -0.013052899459167024 -0.005326060038997907 -2.2155353469462518
+  translation -0.30222860535844126 -0.4730920790599799 -3.566259903108396e-05
+  rotation 0.00080951711973676 0.001605438364613349 -0.9999983836235388 1.0633003776483971
+  controller "e-puck_avoid_collision"
+}
+Floor {
+  size 2 2
+}
+Solid {
+  translation -0.227316 0.511074 0.11431943750890615
+  children [
+    DEF ball Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 1
+        roughness 1
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.12
+        subdivision 2
+      }
+    }
+  ]
+  boundingObject USE ball
+  physics Physics {
+  }
+  linearVelocity 0 0 -2.8271597168564594e-16
+}
+Solid {
+  translation 0 1 0.05
+  children [
+    DEF wall Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "../../../Downloads/istockphoto-1156111101-170667a.jpg"
+          ]
+        }
+        metalness 0
+      }
+      geometry Box {
+        size 2 0.05 0.1
+      }
+    }
+  ]
+  name "solid(2)"
+  boundingObject USE wall
+}
+Solid {
+  translation 0.07601795019043286 -0.7978589157528744 0.11431943750890611
+  rotation 0.9667618179984938 -0.108996195771219 -0.2312821146730752 2.700348966528957
+  children [
+    DEF ball Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 1
+        roughness 1
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.12
+        subdivision 2
+      }
+    }
+  ]
+  name "solid(1)"
+  boundingObject USE ball
+  physics Physics {
+  }
+  linearVelocity 0.002345974307637932 0.0028547688135340246 2.2186968289630304e-16
+  angularVelocity -0.023789740112783536 0.01954978589698277 -0.017374623299248004
+}
+Solid {
+  translation 0 -1 0.05
+  children [
+    USE wall
+  ]
+  name "solid(3)"
+  boundingObject USE wall
+}
+Solid {
+  translation 1 0 0.05
+  rotation 0 0 1 -1.5707953071795862
+  children [
+    USE wall
+  ]
+  name "solid(4)"
+  boundingObject USE wall
+}
+Solid {
+  translation -1 0 0.05
+  rotation 0 0 1 1.5708
+  children [
+    USE wall
+  ]
+  name "solid(5)"
+  boundingObject USE wall
+}
