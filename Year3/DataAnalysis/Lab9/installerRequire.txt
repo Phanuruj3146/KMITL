@@ -1,0 +1,6 @@
+pip3 install pandas
+pip install -U scikit-learn
+pip install graphviz
+pip install pydotplus
+pip install matplotlib
+pip install seaborn
